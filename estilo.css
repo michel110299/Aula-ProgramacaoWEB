@@ -4,7 +4,7 @@
 
 }
 
-#corpo{
+main{
     width:80%;
     margin-left:auto;
     margin-right:auto;
@@ -30,39 +30,91 @@ img{
 
     padding-top: 20px;
 }
+#menu{
+	background:#3b4ba0;
+	text-align: center;
 
+}
+#AreaMenu{
+	padding:50px;
+	text-align: center;
+	margin-top:-1%;
+}
+a{
+	text-decoration:none;
+	color: #fdb714;
+}
+
+#menu a:link, #menu a:visited{
+	color:#fdb714;
+	padding: 8px 12px;
+	
+}
+#menu a:hover{
+	color:#4169E1;
+	background:#fdb714;
+}
 
 #left{
-    width:50%;
-    float:left;   
+    width:40%;
+    float:left;
     padding-top: 20%;  
-    background-color: rgb(255, 255, 255);
-}
-#left ul{
-
     text-align: center;
+    background-color: rgb(255, 255, 255);  
+    margin: 3%;
+    padding: 10px; 
+}
+    
 
+
+#div-form{
+    text-align: center;
+    margin:  auto;
+    border: 1px solid;
+    width: 80%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: inset 0 0 1em #fdb714, 0 0 1em blue;
+}
+
+
+form label{
+    display: block;
+    font-weight: bold;
+    margin:5px;
+}
+form button{
+    margin-top: 10px;
 }
 #right{
-    width:50%;
+    width:70%;
     float:right;
+    margin: 3%;
     padding-top: 20%;  
     text-align: center;
-    background-color: rgb(255, 255, 255);   
+    background-color: rgb(255, 255, 255);  
+    padding: 10px; 
 }
-#fundo{
+footer{
     width:100%;
     height:50px;
     margin-top: 250px;
     font-size: 0.5em;
     padding-top: 30px;
     text-align: center;
-    background-color: rgba(13, 23, 172, 0.507);
+    background-color: #3b4ba0;
 
 }
 
 table{
     border-radius: 7px;
-    color: rgba(13, 23, 172, 0.507);
-    margin-top: 20%;
+    border: solid 1px ;
+    margin:auto;
+    width: 100%;
+    box-shadow: inset 0 0 0.25em #fdb714, 0 0 0.25em blue;
+}
+
+table tr , table td{
+    border: 1px solid;
+    border-radius: 7px;
 }

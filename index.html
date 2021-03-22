@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html >
-<head>
-    <title>Minha Pagina - Home</title>
-	<link rel="stylesheet" type="text/css" href=estilo.css>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+	<head>
+		<title>Minha Pagina - Home</title>
+		<link rel="stylesheet" type="text/css" href=estilo.css>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="funcoes.js"></script>
+	</head>
 
-<body id="pagina">
+	<body>
 
-<div id="header">
-
-	<h1>minha pagina em html/css</h1>
-
-					
-</div>
-	
-<div id="corpo">
-	
-
-
-	<div id="left">
-		<ul> 
-			<li>convallis</li> 
-			<li>Oenean</li> 
-			<li>vestibulum</li> 
-			<li>dapibus</li>
-			<li>nunc</li>  
-		</ul>
-
-	</div>
-	<table border="1">
-		<tr>
-		<td>linha 1, célula 1</td>
-		<td>linha 1, célula 2</td>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		</tr>
-		<tr>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		</tr>
-		<tr>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		</tr>
-		<tr>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		<td>linha 2, célula 1</td>
-		<td>linha 2, célula 2</td>
-		</tr>
+		<header id="menu">
+			<div id="AreaMenu">
+				<a href="#" >HOME</a>
+				<a href="#" >TABELAS</a>
+				<a href="#" >CONTATO</a>
+			</div>
+		</header>
 		
-		</table>
-	<div id="right">
+		<main>
+			<div id="left">
+				<div id="div-form">
+					<h2>cadastre-se</h2>
+					<form onsubmit="return enviar_formulario(this)">
+						<div>
+							<label>Nome</label>
+							<input id = "nome"type="text" name="nome"/>
+						</div>
+						<div>
+							<label>E-mail</label>
+							<input id="email" type="text" name="email"/>
+						</div>
+						<div>
+							<label>Telefone</label>
+							<input id="telefone" type="text" name="telefone"/>
+						</div>
+						<button>cadastrar</button>
+					</form>
+				</div>      
 
+			</div>
+			
+			<div id="right">
 
-		<img src="Imagens/imagem1.jpeg">
-	</div>
-</div>
-<div id = "fundo">
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Nome
+							</th>
+							<th>
+								E-mail
+							</th>
+							<th>
+								Telefone
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="result-form">
+								michel
+							</td>
+							<td>
+								email@email
+							</td>
+							<td>
+								258808080
+							</td>
+						</tr>
+					</tbody>
+				</table>
 
-<h1>Autor: Michel Fernandes, estudante de html,CSS</h1>
+			</div>
+		</main>
+		<footer >
 
-</div>
+			<h1>Autor: Michel Fernandes, estudante de html,CSS</h1>
 
-</div>
-</body>
+		</footer>
+
+	</body>
 </html>
