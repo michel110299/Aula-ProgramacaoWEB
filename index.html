@@ -21,7 +21,7 @@
 			<div id="left">
 				<div id="div-form">
 					<h2>cadastre-se</h2>
-					<form onsubmit="return enviar_formulario(this)">
+					<form onsubmit="return enviar_formulario()">
 						<div>
 							<label>Nome</label>
 							<input id = "nome"type="text" name="nome"/>
@@ -45,7 +45,7 @@
 				<table>
 					<thead>
 						<tr>
-							<th>
+							<th id >
 								Nome
 							</th>
 							<th>
@@ -56,18 +56,8 @@
 							</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td id="result-form">
-								michel
-							</td>
-							<td>
-								email@email
-							</td>
-							<td>
-								258808080
-							</td>
-						</tr>
+					<tbody id="tabela">
+
 					</tbody>
 				</table>
 
